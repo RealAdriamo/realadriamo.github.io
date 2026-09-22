@@ -30,9 +30,9 @@ window.PROJECTS = [
     year: "2024–2025",
     tone: "blue",
     category: "work",
-    tagline: "My inbox kept containing events. I made that the computer’s problem.",
+    tagline: "Automating event extraction from unstructured email.",
     summary: "An automated pipeline that reads email, extracts events with Gemini, creates Calendar entries, deduplicates them, and sends notifications.",
-    why: "Important events kept arriving as unstructured email text, and manually copying dates, times, locations, and titles into Google Calendar was repetitive enough that I eventually stopped accepting it as a normal human responsibility.",
+    why: "Important events often arrived as unstructured email text, requiring repetitive manual transfer of dates, times, locations, and titles into Google Calendar.",
     solution: "A Google Apps Script workflow processes incoming mail, asks Gemini for structured event data, validates the result, creates Calendar events, and notifies me through Pushbullet.",
     details: [
       "Structured extraction of event name, date, time, location, and duration",
@@ -54,7 +54,7 @@ window.PROJECTS = [
     year: "2026",
     tone: "yellow",
     category: "work",
-    tagline: "A tiny desktop tool built because my existing workflow annoyed me.",
+    tagline: "A streamlined desktop workflow for downloading media.",
     summary: "A Python desktop app for downloading YouTube videos or audio with a simple GUI, multi-URL support, live progress, and clipboard detection.",
     why: "I wanted a faster, simpler way to download YouTube media without repeatedly dealing with command-line syntax or clunky workflows. The fastest route to the workflow I wanted was just building it.",
     solution: "A Tkinter interface wraps yt-dlp, accepts batches of URLs, auto-detects YouTube links from the clipboard, downloads MP3 or MP4 output, and streams progress back into the UI without freezing it.",
@@ -66,7 +66,7 @@ window.PROJECTS = [
       "Live subprocess output and progress reporting",
       "Cross-platform downloads-folder launching"
     ],
-    lessons: "This is one of my favorite kinds of project: small enough to finish quickly, specific enough to genuinely improve my day, and polished enough that I kept using the thing instead of going back to the old workflow.",
+    lessons: "This project reinforced the value of focused tools: a narrow problem, a responsive interface, and enough polish to make the new workflow preferable to the old one.",
     stack: ["Python", "Tkinter", "yt-dlp", "Threading", "Subprocess"],
     statA: "Desktop GUI",
     statB: "Built for my own workflow"
@@ -78,7 +78,7 @@ window.PROJECTS = [
     year: "2025",
     tone: "green",
     category: "work",
-    tagline: "A children’s math game starring a frog with an unnecessarily elaborate lore bible.",
+    tagline: "A full-stack educational math game built by a four-person team.",
     summary: "A web-based educational math game built in a four-person Agile team using React and Django REST Framework.",
     why: "The project started as a software-engineering course team project, but it grew into a full playable concept: a frog moves through themed math worlds, eats the bug with the correct answer, races the clock, and earns stars based on performance.",
     solution: "The team split frontend, backend, authentication, audio, dashboard, gameplay, and reporting work across iterative sprints. My work included core gameplay systems such as the level timer, level-start flow, and star/results screen.",
@@ -125,9 +125,9 @@ window.PROJECTS = [
     year: "2025",
     tone: "blue",
     category: "fun",
-    tagline: "Take English, route it through linguistic chaos, and see what crawls back out.",
+    tagline: "An experiment in repeated machine translation and semantic drift.",
     summary: "A Python experiment that repeatedly translates text through random languages before bringing it back to English.",
-    why: "Because everyone knows the funniest use of a translation API is deliberately making the translation worse.",
+    why: "The project explores how meaning changes when text is repeatedly translated through randomly selected languages.",
     solution: "The script chooses random languages, translates the text step by step through Google Cloud Translation, shows progress, records the entire language path, and eventually translates the mutated result back to English.",
     details: [
       "Google Cloud Translation API integration",
@@ -136,7 +136,7 @@ window.PROJECTS = [
       "Language-path tracking",
       "HTML entity cleanup in translated output"
     ],
-    lessons: "Small experimental projects are a great excuse to touch an API, play with edge cases, and build something that produces immediately visible results—even if the result is linguistic damage.",
+    lessons: "The project provided a compact way to work with an external API, randomized processing, progress reporting, and text-cleanup edge cases.",
     stack: ["Python", "Google Cloud Translation", "APIs"],
     statA: "100+ languages",
     statB: "Maximum semantic drift"
@@ -144,24 +144,24 @@ window.PROJECTS = [
   {
     id: "chipotleroulette",
     title: "Chipotle Roulette",
-    eyebrow: "CHAOS ENGINE",
+    eyebrow: "GENERATIVE TOOL",
     year: "2025",
     tone: "orange",
     category: "fun",
-    tagline: "What if lunch had procedural generation?",
+    tagline: "A menu-aware procedural order generator.",
     summary: "A Python generator that creates randomized Chipotle orders while still respecting the weird little constraints of the menu.",
-    why: "Working at Chipotle apparently wasn’t enough Chipotle, so naturally I wrote a random-order generator too.",
+    why: "I built the project to explore constrained random generation using a menu with format-specific rules and dependencies.",
     solution: "The script randomizes entrée format, proteins, rice, beans, toppings, shells, sides, and ordering logic while accounting for menu-specific differences between burritos, bowls, tacos, quesadillas, and kids meals.",
     details: [
       "Menu-aware random generation",
       "Different logic by entrée type",
       "Ingredient ordering for readable output",
       "Conditional shells, sides, and add-ons",
-      "Enough edge-case logic to make a joke project weirdly specific"
+      "Edge-case handling for format-specific menu constraints"
     ],
-    lessons: "Even goofy generators get more interesting when the random output has rules. Constraints are what make procedural generation feel intentional instead of just noisy.",
+    lessons: "The project demonstrates how constraints make procedural generation more coherent by ensuring randomized output still follows domain-specific rules.",
     stack: ["Python", "Randomization", "Procedural Logic"],
-    statA: "Procedural lunch",
-    statB: "Questionable decisions"
+    statA: "Constraint-based generation",
+    statB: "Menu-aware logic"
   }
 ];

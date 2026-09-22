@@ -75,3 +75,10 @@ footer{border-top:1px solid var(--line);min-height:120px;display:flex;align-item
 @media (max-width:900px){.hero-grid,.featured-link,.about-grid,.case-grid{grid-template-columns:1fr}.hero-orbit{height:340px}.featured-copy h3{margin-top:70px}.phone-stage{min-height:520px}.project-grid,.fun-grid{grid-template-columns:1fr}.section-heading{align-items:flex-start;flex-direction:column}.case-list{grid-template-columns:1fr}.case-grid{gap:30px}}
 @media (max-width:620px){.shell{width:min(100% - 24px,1180px)}nav{display:none}.hero{padding-top:40px}h1{font-size:56px}.hero-copy{font-size:17px}.hero-orbit{transform:scale(.78);margin:-30px}.manifesto{padding:90px 0}.featured-copy{padding:30px}.featured-copy h3{font-size:48px}.project-card,.fun-card{padding:24px}.project-card h3,.fun-card h3{font-size:34px}.contact-card{padding:34px 24px}.stat-row{grid-template-columns:1fr}.case-hero{padding-top:30px}.case-content h2{font-size:38px}.case-stats{grid-template-columns:1fr}footer{gap:20px;align-items:flex-start;flex-direction:column;justify-content:center}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.ring-two,.marquee-track{animation:none}.cursor-glow{display:none}}
+
+/* Professional portfolio refinements */
+:root{--accent:#9fb7ff;--radius:18px;--shadow:0 18px 50px rgba(0,0,0,.18)}
+.cursor-glow{display:none}
+.hero-orbit{height:360px}.ring-two{animation:none;border-style:solid}.orbit-core{border-radius:24px;transform:none;background:var(--surface);color:var(--text);border:1px solid var(--line);box-shadow:none}.orbit-chip{box-shadow:none}
+.manifesto{padding:100px 0}.featured-card,.project-card,.fun-card,.contact-card,.next-project{box-shadow:none}.project-card:hover,.fun-card:hover{transform:translateY(-2px)}
+.contact-card{background:var(--surface);color:var(--text);border:1px solid var(--line)}.contact-card .kicker,.contact-card p{color:var(--muted)}.contact-card .button.primary{background:var(--text);color:var(--bg);border-color:var(--text)}.contact-card .button.ghost{color:var(--text);border-color:var(--line)}
